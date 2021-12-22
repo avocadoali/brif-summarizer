@@ -5,11 +5,6 @@ import torch
 import os
 import sys
 
-filepath = sys.argv[1]
-file = open(filepath)
-long_text = file.read()
-file.close()
-
 model = BartForConditionalGeneration.from_pretrained('facebook/bart-large-cnn')
 tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
 def summarize(long_text):
