@@ -114,6 +114,11 @@ def main():
     if len(sys.argv) <= 1:
         print("Please provide a file to summarize")
         return
+    if not os.path.exists("Summaries"):
+        os.makedirs("Summaries")
+    if not os.path.exists("Sandbox"):
+        os.makedirs("Sandbox")
+
     for i in range(1,len(sys.argv)):
         empty_sandbox()
         bookname = convert_book(sys.argv[i])
