@@ -9,8 +9,13 @@ python3 -m venv brif
 source brif/bin/activate
 ```
 ### install all requirements
+Linux/Macos:
 ```
 pip3 install -r requirements.txt
+```
+Windows:
+```
+honestly couldn't care less
 ```
 ### summarize all books
 Remember to place all books you need in the Books directory. Accepted formats: .epub, .pdf, .txt
